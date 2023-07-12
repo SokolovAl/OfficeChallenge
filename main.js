@@ -29,9 +29,7 @@ class Manager {
     };
 
     askEmployeesToWork = (office) => {
-        this.employees.forEach((e) => {
-            e.work(office);
-        });
+        this.employees.forEach(e => e.work(office));
     };
 }
 
@@ -61,8 +59,6 @@ class Office {
     };
 
     startWorkDay = () => {
-        this.managers.forEach((m) => {
-            m.askEmployeesToWork(this);
-        });
+        this.managers.forEach(m => m.askEmployeesToWork(this));
     };
 }
